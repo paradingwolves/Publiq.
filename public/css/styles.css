@@ -5,23 +5,66 @@
 /* 5. Footer Styles */
 /* 6. Media Queries */
 
+
 html, body {
     overflow-x: hidden;
 }
+
 
 /* 1. Header Styles */
 
 
 /* 2. Navgation Styles */
+/* .navbar{
+    position: fixed;
+} */
+.navbar-brand {
+    text-align: center;
+}
+.nav-link {
+    text-align: center;
+}
 
 
 /* 3. Heading Styles */
 
 
 /* 4. Body Styles */
+.carousel-item{
+    height: 32rem;
+    background-color: #777;
+    position: relative;
+    color:white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left:15%;
+    right: 0;
+    padding-bottom: 50px
+}
+
 
 
 /* 5. Footer Styles */
-
+footer {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
 
 /* 6. Media Queries */
+
+@media screen and (min-width: 1200px) {
+    footer {
+        text-align: unset;
+    }
+}
