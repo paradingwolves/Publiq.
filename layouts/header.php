@@ -33,7 +33,7 @@
                 <a class="nav-link hoursLink" href="#">Hours</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="index.php#aboutUsText">About</a>
               </li>
             </ul>
           </div>
