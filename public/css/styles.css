@@ -5,9 +5,14 @@
 /* 5. Footer Styles */
 /* 6. Media Queries */
 
-
+* {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
 html, body {
     overflow-x: hidden;
+}
+#desktopView {
+    display: none;
 }
 
 
@@ -24,6 +29,7 @@ html, body {
 .nav-link {
     text-align: center;
 }
+
 
 
 /* 3. Heading Styles */
@@ -43,13 +49,43 @@ html, body {
 .container {
     position: absolute;
     bottom: 0;
-    left:15%;
+    left:10%;
     right: 0;
     padding-bottom: 50px
 }
 
+#aboutUsText {
+    text-indent: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+#aboutUsText:nth-of-type(2) {
+    display: none;
+}
+#drinkImg {
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: unset;
+}
+.ingredients {
+    font-size: 4vw;
+    /* margin-top: 1% */
+}
+.price {
+    font-size: 4.5vw;
+    text-align: center;
+}
 
-
+h7.drinkName {
+    text-decoration: underline;
+    font-size: 5vw;
+}
+.priceMobile {
+    margin-left: 75%;
+}
+.menuItem {
+    border: 1px solid silver
+}
 /* 5. Footer Styles */
 footer {
     text-align: center;
@@ -66,5 +102,58 @@ footer a:hover {
 @media screen and (min-width: 1200px) {
     footer {
         text-align: unset;
+    }
+    .navbar-brand {
+        margin-left: 5%
+    }
+    ul.navbar-nav {
+        margin-left: 28%;
+    }
+    #aboutUsText {
+        font-size: 1.75vw;   
+    }
+    #aboutUsText:nth-of-type(2) {
+        display: block;
+    }
+    .inner {
+        background-color: grey;
+        border: 2px solid white;
+        /* border-radius: 0.5rem; */
+        opacity: 95%;
+        padding: 15px;
+        width: 33%;
+    }
+    #drinkDesc {
+        text-indent: 1em;
+        font-size: 1.33vw;
+    }
+    .ingredients {
+        font-size: 1.33vw;
+        margin-top: 5%
+    }
+    .price {
+        margin: 0 0 3% 55%;
+        font-size: 1.5vw
+    }
+    button.accordion-button {
+        font-size: 1.25vw;
+    }
+    #desktopView {
+        display: block;
+    }
+    #mobileView {
+        display: none;
+    }
+    .menuItem {
+        border: none;
+    }
+    h7.drinkName {
+        font-size: 1.25vw;
+    }
+  /*   #drinks {
+        border: 2px solid silver; border-radius: 0.5em;
+     */}
+    .hoursText{
+        font-size: 2vw;
     }
 }
